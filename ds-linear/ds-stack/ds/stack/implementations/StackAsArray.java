@@ -1,4 +1,4 @@
-package ds.stack.array;
+package ds.stack.implementations;
 
 public class StackAsArray {
 	
