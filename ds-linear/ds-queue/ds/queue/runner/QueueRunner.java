@@ -1,5 +1,7 @@
 package ds.queue.runner;
 
+import java.util.concurrent.TimeUnit;
+
 import ds.queue.implementations.CircularQueueAsArray;
 import ds.queue.implementations.QueueAsArray;
 
@@ -7,12 +9,12 @@ public class QueueRunner {
 
 	public static void main(String[] args) {
 		
-//		runQueueAsArray();
+		runQueueAsArray();
 		runCircularQueueAsArray();
 	}
 
-	private static void runCircularQueueAsArray() {
-		CircularQueueAsArray q = new CircularQueueAsArray(5);
+	private static void runQueueAsArray() {
+		QueueAsArray q = new QueueAsArray(5);
 		q.enqueue(10);
 		q.enqueue(20);
 		q.enqueue(30);
@@ -25,8 +27,8 @@ public class QueueRunner {
 		q.print();
 	}
 
-	private static void runQueueAsArray() {
-		QueueAsArray q = new QueueAsArray(5);
+	private static void runCircularQueueAsArray() {
+		CircularQueueAsArray q = new CircularQueueAsArray(5);
 		q.enqueue(10);
 		q.enqueue(20);
 		q.enqueue(30);

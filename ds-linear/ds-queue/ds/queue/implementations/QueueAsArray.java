@@ -44,9 +44,9 @@ public class QueueAsArray {
 	}
 	
 	public void print() {
-		System.out.print("queue : ");
+		StringBuilder sb = new StringBuilder("queue : ");
 		for(int i=front ; i<=rear; i++)
-			System.out.print(String.format("%d <-- ", arr[i]));
-		System.out.println();
+			sb.append(String.format("%d <-- ", arr[i]));
+		System.out.println(sb.toString());
 	}
 }

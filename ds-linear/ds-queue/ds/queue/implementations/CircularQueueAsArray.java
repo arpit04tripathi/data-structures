@@ -58,10 +58,10 @@ public class CircularQueueAsArray {
 	}
 	
 	public void print() {
-		System.out.print("queue : ");
+		StringBuilder sb = new StringBuilder("queue : ");
 		int end = (rear>front) ? rear : rear+arr.length;
 		for(int i=front ; i<=end; i++)
-			System.out.print(String.format("%d <-- ", arr[i%arr.length]));
-		System.out.println();
+			sb.append(String.format("%d <-- ", arr[i%arr.length]));
+		System.out.println(sb.toString());
 	}
 }
